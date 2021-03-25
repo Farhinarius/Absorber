@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5361281950930537916}
   - component: {fileID: 5361281950930537918}
   - component: {fileID: -6158470154639215722}
-  - component: {fileID: 7250212769500848012}
   m_Layer: 0
   m_Name: ball_blue
   m_TagString: Emotion
@@ -72,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 896385063
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 03c7f7cce02dd864988a0ad0b08e7fa8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -98,7 +97,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0025756955, y: 0.0030908585}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -109,7 +108,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.13266718, y: 0.13369751}
+  m_Size: {x: 0.16666667, y: 0.16666667}
   m_EdgeRadius: 0
 --- !u!114 &-6158470154639215722
 MonoBehaviour:
@@ -124,26 +123,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   emotionColor: 0
-  math: 0
-  amplitude: 0.1
-  speed: 0.7
-  radius: 0.7
---- !u!95 &7250212769500848012
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5361281950930537913}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c378c70e21f12ea4f93053e1ca76ae14, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0

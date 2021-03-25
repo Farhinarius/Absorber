@@ -61,8 +61,10 @@ public class Projectile : MonoBehaviour
     {
         if (other.tag == "Consumable")
         {
-            Debug.Log("KILL?");
-            other.GetComponent<ConsumableBehaviour>().Kill();
+            Destroy(this.gameObject);
+        }
+        else if (other.tag == "Object")
+        {
             Destroy(this.gameObject);
         }
     }

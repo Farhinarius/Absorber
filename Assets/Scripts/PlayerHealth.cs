@@ -35,7 +35,14 @@ public class PlayerHealth : MonoBehaviour
             }
             else
             {
-                GameManager.instance.Defeat();
+                GetComponent<SpriteRenderer>().enabled = false;
+                GetComponent<Rigidbody2D>().isKinematic = true;
+                GetComponent<BoxCollider2D>().enabled = false;
+                GetComponent<HumanController>().enabled = false;
+                GetComponent<PlayerController>().enabled = false;
+                GetComponent<EmotionController>().enabled = false;
+                this.enabled = false;
+                // GameManager.instance.Defeat();
             }
 
         }
@@ -62,6 +69,16 @@ public class PlayerHealth : MonoBehaviour
     private void Update()
     {
         if (invincibleTimer >= 0) invincibleTimer -= Time.deltaTime;
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            UpdateHealth(-10);
+        } 
+
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            UpdateHealth(+10);
+        }
     }
 
     private void FixedUpdate() 
@@ -78,7 +95,11 @@ public class PlayerHealth : MonoBehaviour
         }
         else
         {
-            GameManager.instance.Defeat();
+            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<Rigidbody2D>().isKinematic = true;
+            GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<HumanController>().enabled = false;
+            // GameManager.instance.Defeat();
         }
     }
 }
