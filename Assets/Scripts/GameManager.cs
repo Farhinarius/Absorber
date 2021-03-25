@@ -13,8 +13,6 @@ public class GameManager : MonoBehaviour
     public static int currectSceneIndex = 0;
     private bool gameOver;
 
-
-
     private void Awake() {
         Debug.Log("GameManager Awake");
         if (instance == null) instance = this;
