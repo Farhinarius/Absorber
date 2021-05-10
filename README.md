@@ -1,3 +1,2 @@
 # Unity-Absorber-2d
-
-Game Jam game
+Outdated version of game from the game jam
